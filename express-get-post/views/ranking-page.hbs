@@ -1,0 +1,11 @@
+<h1>Ranking</h1>
+
+{{#if movies}}
+<div>
+  {{#each movies}}
+    {{> movieCard this}}
+  {{/each}}
+</div>
+{{/if}}
+
+<script src="/script.js"></script>

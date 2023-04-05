@@ -1,0 +1,15 @@
+<h1>Search page</h1>
+<form action="/search" method="GET">
+  <label for="title">Title</label>
+  <input type="text" name="title">
+  <label for="director">Director</label>
+  <input type="text" name="director">
+  <button type="submit">Search</button>
+</form>
+{{#if movies}}
+<div>
+  {{#each movies}}
+  {{> movieCard this}}
+  {{/each}}
+</div>
+{{/if}}
